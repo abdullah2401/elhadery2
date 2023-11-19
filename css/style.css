@@ -154,12 +154,7 @@ h2{
     }
     .page .side-bar ul li:hover::before,
     .page .side-bar ul li.active::before{
-        content:"";
-        position: absolute ;
-        border-width:20px 10px ;
-        border-style:solid;
-        border-color: transparent transparent transparent #e5e5e5;
-        right:-15px;
+        right: -15px;
     }
     .side-bar > h3 {
         font-size: 12px ;
