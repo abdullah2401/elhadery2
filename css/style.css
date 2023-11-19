@@ -80,7 +80,7 @@ h2{
 .page .side-bar ul li {
     transition-duration: 0.43s;
     margin-bottom: 5px;
-    position:relateve;
+    position:relative;
 }
 .page .side-bar ul li:hover,
 .page .side-bar ul li.active{
