@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Files</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="side-bar bg-white p-20 relative">
+            <h3 class="text-c relative ">ELHADREY</h3>
+            <ul>
+                <li class=" rad-5 p-5 p-l-r-10">
+                    <a href="index.html" class=" align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-solid fa-chart-bar fa-fw"></i>
+                        <span>DashBoard</span>
+                    </a>
+                </li>
+                <li class="rad-5 p-5 p-l-r-10">
+                    <a href="setting.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-solid fa-gears fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class=" rad-5 p-5 p-l-r-10">
+                    <a href="profile.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-solid fa-user-tie fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="rad-5 p-5 p-l-r-10">
+                    <a href="project.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-solid fa-code-fork fa-fw"></i>
+                        <span>Project </span>
+                    </a>
+                </li>
+                <li class="rad-5 p-5 p-l-r-10">
+                    <a href="curses.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="rad-5 p-5 p-l-r-10">
+                    <a href="friends.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="active rad-5 p-5 p-l-r-10">
+                    <a href="files.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="rad-5 p-5 p-l-r-10">
+                    <a href="plans.html" class="align-c d-flex p-10 fs-14 rad-5 c-black">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <div class="head bg-white p-10 s-between">
+                <div class="search relative ">
+                    <input type="search" name="search" class="p-10" id="" placeholder="search ">
+                </div>
+                <div class="icons s-between">
+                    <span class="notification rad-10 relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="images/myimg.jpeg" alt="">
+                </div>
+            </div>
+            <h1 class="relative">Files
+                <span></span>
+            </h1>
+            <!-- <label>
+                <input type="checkbox" class="toggle-checkbox" checked>
+                <div class="toggle-switch"></div>
+            </label> -->
+            <div class="files-page gap-20 m-20 d-flex ">
+                <div class="files-stats p-20 rad-10 bg-white ">
+                    <h2 class="m-t-0 m-b-15 txt-c-mob">Files States</h2>
+                    <div class="d-flex align-c p-10 rad-5 fs-13 m-b-15 bor-eee">
+                        <i class="far fa-file-pdf fa-lg c-blue center-flex icon blue"></i>
+                        <div class="info">
+                            <span>PDF Files </span>
+                            <span class="c-grey d-block m-t-5">120</span>
+                        </div>
+                        <div class="size c-green">3.4GB</div>
+                    </div>
+                    <div class="d-flex align-c p-10 rad-5 fs-13 m-b-15 bor-eee">
+                        <i class="far fa-images fa-lg c-green center-flex icon green"></i>
+                        <div class="info">
+                            <span>img Files </span>
+                            <span class="c-grey d-block m-t-5">90</span>
+                        </div>
+                        <div class="size c-green">1.8GB</div>
+                    </div>
+                    <div class="d-flex align-c p-10 rad-5 fs-13 m-b-15 bor-eee">
+                        <i class="far fa-file-word fa-lg c-red center-flex icon red"></i>
+                        <div class="info">
+                            <span>Words Files </span>
+                            <span class="c-grey d-block m-t-5">160</span>
+                        </div>
+                        <div class="size c-green">0.9GB</div>
+                    </div>
+                    <div class="d-flex align-c p-10 rad-5 fs-13 m-b-15 bor-eee">
+                        <i class="fa-solid fa-file-csv fa-lg c-yellow center-flex icon yellow"></i>
+                        <div class="info">
+                            <span>CSV Files </span>
+                            <span class="c-grey d-block m-t-5">200</span>
+                        </div>
+                        <div class="size c-green">2.4GB</div>
+                    </div>
+                    <a href="#" class="upload btn-shape c-fff bg-blue w-fit d-block">
+                        <i class="fas fa-angles-up"></i> UPLOAD
+                    </a>
+                </div>
+                <div class="files-content d-grid gap-20">
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/avi.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.avi</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/eps.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.eps</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/dll.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.dll</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/zip.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.zip</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/avi.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.avi</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/eps.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.eps</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/dll.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.dll</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/zip.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.zip</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/avi.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.avi</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/eps.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.eps</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/dll.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.dll</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/zip.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.zip</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/psd.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.psd</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                    <div class="file bg-white rad-10 p-20">
+                        <i class="fas fa-download c-grey absolute"></i>
+                        <div class="icon text-c">
+                            <img src="images/pdf.svg" class="m-b-10 m-t-10" alt="">
+                        </div>
+                        <div class="text-c m-b-15 fs-14">myfile.pdf</div>
+                        <p class="c-grey fs-13">ELHADREY</p>
+                        <div class="info s-between m-t-10 p-t-10 fs-13 c-grey ">
+                            <span>3/12/2022</span>
+                            <span>3MB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
