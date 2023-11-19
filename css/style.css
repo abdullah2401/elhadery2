@@ -31,7 +31,7 @@ button{
 }
 body{
     font-family: "Open Sans", sans-serif;
-    background-color: #cfcfcf;
+    background-color: #f1f1f1;
     padding: 0;
     margin: 0;
 }
@@ -60,12 +60,15 @@ ul{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+h2{
+   font-size: 20px !important;
+}
 .page{
     min-height: 100vh;
 
 }
 .side-bar{
-    box-shadow: 2px 0px 5px #999;
+    box-shadow: 2px 0px 10px -5px #a1a1a1;
     width: 250px;
 }
 .page .side-bar ul li a {
@@ -77,26 +80,11 @@ ul{
 .page .side-bar ul li {
     transition-duration: 0.43s;
     margin-bottom: 5px;
-    position: relative;
 }
 .page .side-bar ul li:hover,
 .page .side-bar ul li.active{
-    background-color: #e6e6e6;
+    background-color: #e5e5e5;
     padding-left: 10px;
-}
-.page .side-bar ul li.active::before{
-    content: "";
-    position: absolute;
-    right: -25px;
-    border-width: 20px 10px;
-    border-style: solid;
-    border-color: transparent transparent transparent #e6e6e6;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
 }
 .side-bar > h3 {
     margin-bottom: 40px ;
@@ -134,16 +122,25 @@ ul{
 @media (max-width: 767px ) {
     .side-bar{
         width: fit-content ;
+        padding: 5px !important;
+    }
+    .page .side-bar ul li{
+        padding: 5px 0px !important;
+    }
+    .page .side-bar ul li a {
+        padding: 5px 0;
     }
     .page .side-bar ul li a i {
-        margin-right: 0px;
+        margin-right: 0px !important;
     }
     .side-bar ul li a span {
         display: none;
     }
     .side-bar > h3 {
         font-size: 12px ;
+        font-weight: 500;
         margin-bottom: 15px ;
+        letter-spacing: -0.5px;
     }
     .side-bar > h3::before,
     .side-bar > h3::after{
@@ -410,6 +407,16 @@ ul{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
+@media(max-width: 767px ){
+   .target .info .progress > span span {
+      font-size: 12px;
+      bottom: 20px;
+   }
+   .target .info .progress > span span::before {
+      border-width: 5px;
+      bottom: -12px;
+   }
+}
 .blue .icon,
 .blue .progress {
     background-color: rgba(14, 40, 155, 0.26);
@@ -492,6 +499,16 @@ ul{
 .latest-uploaded .file-row i:hover {
     background-color: #c5c9d6;
     color: #000;
+}
+@media (max-width: 567px ) {
+    .latest-uploaded .file-row {
+       display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .latest-uploaded .file-row .info{
+       margin-bottom: -10px;
+    }
 }
 /* projects  */
 .latest-project ul::before {
@@ -637,6 +654,22 @@ ul{
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
 }
+@media(max-width:767px){
+   .media-stats .box{
+      padding: 10px 10px 10px 50px !important;
+   }
+   .media-stats .box a {
+      font-size: 10px;
+      min-width: fit-content;
+   }
+   .media-stats .box > i{
+      font-size: 20px;
+      width: 40px;
+   }
+   .media-stats .box >span {
+      font-size: 14px;
+   }
+}
 .media-stats .box > a:hover{
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -735,15 +768,7 @@ ul{
 
 
 
-
-
 /* settings */
-
-
-
-
-
-
 
 
 .toggle-checkbox{
@@ -1098,6 +1123,17 @@ ul{
     .profile-page .info-box .box > div {
         min-width:  100px;
     }
+    .profile-page .info-box {
+       height: fit-content;
+    }
+    .profile-page .avatar-box .level {
+       width: 75%;
+       margin: auto;
+       height: 20px;
+    }
+    .profile-page .info-box .box {
+       height: fit-content;
+    }
 }
 @media (min-width: 768px ) {
     .profile-page .info-box .box > div {
@@ -1109,6 +1145,7 @@ ul{
     .profile-page .other-data {
         flex-direction: column;
     }
+    
 }
 
 .profile-page .my-skills {
@@ -1116,6 +1153,14 @@ ul{
 }
 .profile-page .my-skills ul li {
     padding: 15px 0;
+}
+@media (max-width: 767px ) {
+    .profile-page .my-skills ul li  {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
 }
 .profile-page .my-skills ul li:not(:last-child){
     border-bottom: 1px solid #b9b9b9;
@@ -1199,6 +1244,11 @@ ul{
     }
     .project-page .project .progress > span:last-child{
         margin-top: 15px;
+    }
+    .project-page .project .date{
+    position: absolute;
+    right: 2px;
+    top: 2px;
     }
 }
 .project-page .project .team-work {
@@ -1325,40 +1375,10 @@ ul{
         gap: 10px;
     }
 }
-.friends-page .friend{
-    perspective: 500px ;
-    box-shadow: 0 1px 10px 2px #a2a2a2;
-}
-.friends-page .friend > div{
-    background-color: transparent;
-    transform: translate3d(0px,0px,30px);
-    -webkit-transform: translate3d(0px,0px,30px);
-    -moz-transform: translate3d(0px,0px,30px);
-    -ms-transform: translate3d(0px,0px,30px);
-    -o-transform: translate3d(0px,0px,30px);
-}
-.friends-page .friend > div.conect{
-    background-color: transparent;
-    transform: translate3d(40px, 40px, 150px);
-    -webkit-transform: translate3d(40px, 40px, 150px);
-    -moz-transform: translate3d(40px, 40px, 150px);
-    -ms-transform: translate3d(40px, 40px, 150px);
-    -o-transform: translate3d(40px, 40px, 150px);
-}
-.friends-page .friend:hover{
-    transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-}
 .friends-page .friend .conect{
     position: absolute;
-    left: 25px ;
-    top: 25px ;
-}
-.friends-page .friend .conect i{
-    box-shadow: 0px 0px 10px 1px #a5abe5cc;
+    left: 10px ;
+    top: 10px ;
 }
 .friends-page .friend .conect i:hover {
     background-color: rgb(32, 32, 32);
