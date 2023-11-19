@@ -90,7 +90,7 @@ h2{
 .page .side-bar ul li.active::before{
     content:"";
     position: absolute ;
-    border-width:10px 20px ;
+    border-width:20px 10px ;
     border-style:solid;
     border-color: transparent transparent transparent #e5e5e5;
     right:-25px;
